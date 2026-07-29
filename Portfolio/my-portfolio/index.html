@@ -9,8 +9,9 @@
         header { background: #1a237e; color: white; padding: 3rem 1rem; text-align: center; }
         .container { max-width: 900px; margin: auto; padding: 2rem; }
         h2 { color: #1a237e; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; margin-top: 2.5rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 1rem; }
-        .card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .services-grid, .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 1rem; }
+        .card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative; }
+        .price-tag { font-size: 1.8rem; font-weight: bold; color: #1a237e; margin: 10px 0; }
         .hosting-box { background: #e8eaf6; border-left: 5px solid #1a237e; padding: 1.5rem; border-radius: 4px; margin-top: 1rem; }
         .ai-box { background: #fffde7; border-left: 5px solid #fbc02d; padding: 1.5rem; border-radius: 4px; margin-top: 1.5rem; }
         .portfolio-links { display: flex; gap: 20px; margin-top: 1rem; }
@@ -53,6 +54,35 @@
                 <div class="card">
                     <h3>Google Search Ready</h3>
                     <p>I structure the HTML tags properly behind the scenes so local clients can easily find your contact info on Google.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Simple Pricing</h2>
+            <p>No hidden fees or surprise contracts. Here are my base rates for custom web builds:</p>
+            <div class="pricing-grid">
+                <div class="card">
+                    <h3>The Starter Page</h3>
+                    <div class="price-tag">$150</div>
+                    <p>Perfect for simple services like landscaping, tutoring, or local contractors.</p>
+                    <ul>
+                        <li>Single-page layout</li>
+                        <li>Services overview</li>
+                        <li>Contact form / phone info</li>
+                        <li>Full mobile setup</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top: 4px solid #1a237e;">
+                    <h3>The Multi-Page Setup</h3>
+                    <div class="price-tag">$300</div>
+                    <p>Great for cafes, bakeries, or shops that need distinct sections.</p>
+                    <ul>
+                        <li>Up to 3-4 separate pages</li>
+                        <li>Full menu or menu sections</li>
+                        <li>About us & story page</li>
+                        <li>Location map integration</li>
+                    </ul>
                 </div>
             </div>
         </section>
